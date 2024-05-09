@@ -1,0 +1,32 @@
+{
+  "name": "groall/prometheus-aggregator-php-client",
+  "type": "library",
+  "description": "Prometheus aggregator v0 client",
+  "homepage": "https://github.com/groall/prometheus-aggregator-php-client",
+  "keywords": ["Prometheus", "aggregator"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "groall",
+      "homepage": "https://github.com/groall/"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5 || ^8.0",
+    "ext-json": "*",
+    "ext-sockets": "*",
+    "ext-zlib": "*"
+  },
+  "autoload": {
+    "psr-4": { "PrometheusAggregator\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Github\\Tests\\": "test/PrometheusAggregator/Tests/"}
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "composer/package-versions-deprecated": true
+    }
+  }
+}
